@@ -13,7 +13,7 @@ public class SinglePatternLazy {
 
     static int i = 0;
 
-    private static SinglePatternLazy singlePatternLazy;
+    private static volatile SinglePatternLazy singlePatternLazy;
 
     public static CyclicBarrier cyclicBarrier = new CyclicBarrier(10, () -> {
         Field singlePatternLazy;
