@@ -12,8 +12,7 @@ public class SinglePatternHungry {
 
     private static final SinglePatternHungry sph = new SinglePatternHungry();
 
-    private SinglePatternHungry() {
-    }
+    private SinglePatternHungry() {}
 
     public static SinglePatternHungry getInstance() {
         return sph;
